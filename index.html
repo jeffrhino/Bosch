@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOSCH</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-image: url(./img/header.jpg);
+            background-size: cover;
+            font-family: sans-serif;
+        }
+        
+        .menu-bar {
+            background: rgb(0, 40, 66);
+            text-align: center;
+        }
+        
+        .menu-bar ul {
+            display: inline-flex;
+            list-style: none;
+            color: #fff;
+        }
+        
+        .menu-bar ul li {
+            width: 120px;
+            margin: 15px;
+            padding: 15px;
+        }
+        
+        .menu-bar ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .active,
+        .menu-bar ul li:hover {
+            background: red;
+            border-radius: 100px;
+        }
+        
+        .menu-bar .fa {
+            margin-right: 8px;
+        }
+        
+        .sub-menu-1 {
+            display: none;
+        }
+        
+        .menu-bar ul li:hover .sub-menu-1 {
+            display: block;
+            position: absolute;
+            background: red;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+        
+        .menu-bar ul li:hover .sub-menu-1 ul {
+            display: block;
+            margin: 10px;
+        }
+        
+        .menu-bar ul li:hover .sub-menu-1 ul li {
+            width: 150px;
+            padding: 10px;
+            border-bottom: 1px dotted#fff;
+            background: transparent;
+            border-radius: 40px;
+            text-align: left;
+        }
+        
+        .menu-bar ul li:hover .sub-menu-1 ul li :last-child {
+            color: white;
+        }
+        
+        .fa-angle-right {
+            float: right;
+        }
+        
+        .sub-menu-2 {
+            display: none;
+        }
+        
+        .hover-me:hover .sub-menu-2 {
+            position: absolute;
+            display: block;
+            margin-top: -40px;
+            margin-left: 150px;
+            background: red;
+            border-radius: 40px;
+        }
+        
+        .form-container {
+            position: absolute;
+            top: 60%;
+            left: 30%;
+            background: rgb(0, 40, 66);
+            transform: translate(-50%, -50%);
+            width: 380px;
+            padding: 50px 30px;
+            border-radius: 10px;
+            box-shadow: 7px 7px 60px white;
+            color: white;
+        }
+        
+        h1 {
+            text-transform: uppercase;
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        
+        .control input {
+            width: 100%;
+            display: block;
+            padding: 10px;
+            color: black;
+            border: none;
+            outline: none;
+            margin: 1em 0;
+        }
+        
+        .control input[type="submit"] {
+            background: red;
+            color: white;
+            text-transform: uppercase;
+            font-size: 1.2em;
+            opacity: .8;
+            transition: opacity .3s ease;
+            border-radius: 20px;
+        }
+        
+        .control input[type="submit"]:hover {
+            opacity: 4;
+        }
+        
+        .link {
+            text-align: center;
+        }
+        
+        .link a {
+            text-decoration: none;
+            color: white;
+            transition: opacity .3s ease;
+        }
+        
+        .link a :hover {
+            opacity: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=" menu-bar ">
+        <ul>
+            <li class="active "><a href="# "><i class="fas fa-home "></i>Home</a></li>
+            <li><a href="index1.html"><i class="fas fa-user "></i>About</a>
+            </li>
+            <li><a href="index2.html"><i class="fas fa-clone "></i>Services</a></li>
+            <li><a href="# "><i class="fas fa-user "></i>Clients</a></li>
+            <li><a href="https://www.bosch.com/research/ "><i class="far fa-person-sign "></i>Research</a>
+                <div class="sub-menu-1 ">
+                    <ul>
+                        <li class="hover-me "><a href="# ">Fields of innovation</a><i class="fas fa-angle-right "></i>
+                            <div class="sub-menu-2 ">
+                                <ul>
+                                    <li><a href="# ">Chemical Energy Conversion </a></li>
+                                    <li><a href="# ">New Business</a></li>
+                                    <li><a href="# ">IOT @ Life</a></li>
+                                    <li><a href="# ">Smart sensors and hardware systems</a></li>
+                                    <li><a href="# ">Modeling,
+        simulation,
+        optimization and new materials</a></li>
+                                    <li><a href="# ">Information and communication technologies</a></li>
+                                    <li><a href="# ">Electrified mobility and systems</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="# ">Research Focus topics</a></li>
+                        <li><a href="# ">know how</a></li>
+                        <li><a href="# ">About Research</a></li>
+                        <li><a href="# ">Meet Bosch Research</a></li>
+                        <li><a href="# ">Blog</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="# "><i class="fal fa-usd-circle "></i>Company</a>
+                <div class="sub-menu-1 ">
+                    <ul>
+                        <li><a href="# ">Our People </a></li>
+                        <li><a href="# ">Annual report</a></li>
+                        <li><a href="# ">Our figures</a></li>
+                        <li><a href="# ">Our History</a></li>
+                        <li><a href="# ">Supply chain</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="# "><i class="fas fa-edit "></i>Careers</a>
+                <div class="sub-menu-1 ">
+                    <ul>
+                        <li><a href="# ">Growth and Development </a></li>
+                        <li><a href="# ">Culture and benifits</a></li>
+                        <li><a href="# ">Our figures</a></li>
+                        <li><a href="# ">Collaboration and leadership</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="# "><i class="fas fa-phone "></i>Contact</a></li>
+        </ul>
+    </div>
+    <section>
+        <div class="form-container">
+            <h1>Login form</h1>
+            <form action="#">
+                <div class="control"><label for="name">Name</label><input type="text" name="name" id="name"></div>
+                <div class="control"><label for="psw">Password</label><input type="password" name="psw" id="psw"></div><span><input type="checkbox">Remember me.</span>
+                <div class="control"><input type="submit" value="Login"></div>
+            </form>
+            <div class="link"><a href="#">Forgot Password ?</a></div>
+        </div>
+    </section>
+
+</body>
+
+</html>
